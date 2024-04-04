@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAQUON TREADWELL</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&display=swap&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Bebas Neue', 'sans-serif'],
+                    roboto: ['Roboto Slab', 'sans-serif'],
+                    robotoNormal: ['Roboto', 'sans-serif'],
+                    angkor: ['Angkor', 'sans-serif'],
+                    arvo: ['Arvo', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        'primary': '#9e7c0c',
+                    },
+                    lineHeight: {
+                        'none': '0.8',
+                        'tight': '1',
+                        'normal': '1.25',
+                        'relaxed': '1.5',
+                        'loose': '1.75',
+                        'max': '2'
+
+                    },
+                    fontSize: {
+                        'xs': '16pt',
+                        'sm': '20pt',
+                        'base': '25pt',
+                        'lg': '29pt',
+                        'xl': '45pt',
+                        '2xl': '56pt',
+                        '3xl': '70pt',
+                        '4xl': '80pt',
+                        '5xl': '95pt',
+                        '6xl': '195pt',
+                        '7xl': '295pt',
+                    },
+                    fontWeight: {
+                        'hairline': 100,
+                        'thin': 200,
+                        'light': 300,
+                        'normal': 400,
+                        'medium': 500,
+                        'semibold': 600,
+                        'bold': 700,
+                        'extrabold': 800,
+                        'black': 900,
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-sans overflow-x-hidden">
+    <main>
+        <div class="hero-banner xll:min-h-screen pt-[80px] xl:pt-[0px] justify-center lg:justify-start bg-cover bg-right-top bg-[url('./images/banner-bg.webp')] flex items-end overflow-hidden relative px-[15px]">
+            <div class="menu block absolute top-0 right-0 p-4 lg:hidden">
+                <img src="images/open.svg" class="max-w-full cursor-pointer" onclick="sidebarToggle()" alt="">
+            </div>
+            <nav class="absolute right-0 transition-all duration-200 translate-x-full  top-0 h-full w-full bg-black z-10 lg:h-auto lg:w-auto lg:bg-transparent lg:translate-x-0" id="sidebar">
+                <div class="menu pt-5 pr-5 block lg:hidden flex justify-end">
+                    <img src="images/close.svg" class="max-w-full" onclick="sidebarToggle()" alt="">
+                </div>
+                <ul class="flex justify-end p-10 flex-col lg:flex-row">
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="uppercase text-xs lg:text-md 2xl:text-lg px-[10px] lg:px-[26px] text-white">about me</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="uppercase text-xs lg:text-md 2xl:text-lg px-[10px] lg:px-[26px] text-white">inspiration</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="uppercase text-xs lg:text-md 2xl:text-lg px-[10px] lg:px-[26px] text-white">tournaments</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="uppercase text-xs lg:text-md 2xl:text-lg px-[10px] lg:px-[26px] text-white">virtual auction </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="uppercase text-xs lg:text-md 2xl:text-lg px-[10px] lg:px-[26px] text-white">shop</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"
+                            class="uppercase text-xs lg:text-md 2xl:text-lg px-[10px] lg:pl-[26px] text-white">lets get connected</a>
+                    </li>
+                </ul>
+                
+            </nav>
+            <div class="flex items-center flex-wrap flex-col-reverse lg:flex-row lg:flex-nowrap">
+                <div class="hero-images w-[60%] mx-auto lg:w-auto mt-10 lg:mt-0">
+                    <img src="images/banner-p.webp" class="max-w-full"   alt="">
+                </div>
+                <div class="hero-content">
+                    <h1 class="text-5xl   lg:text-4xl xl:text-6xl 2xl:text-7xl text-primary leading-none">LAQUON <span
+                            class="block text-white text-4xl lg:text-3xl xl:text-5xl 2xl:text-6xl">TREADWeLL</span>
+                    </h1>
+                    <div class="bg-primary">
+                        <h4 class="font-roboto text-center  2xl:text-lg font-medium px-3 2xl:px-10">MAN OF FAITH • NFL WIDE RECEIVER
+                        </h4>
+                    </div>
+                    <div class="flex justify-around	mt-[48px]">
+                        <a href="javascript:void(0)"
+                            class="block px-[15px] 2xl:px-[48px] py-[10px] text-white border border-transparent bg-primary leading-tight text-xs duration-100 | hover:bg-transparent hover:border-white">ABOUT
+                            ME</a>
+                        <a href="javascript:void(0)"
+                            class="block px-[15px] 2xl:px-[48px] py-[10px] text-white border leading-tight text-xs duration-100 | hover:bg-primary hover:border-transparent">book
+                            a call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about bg-[url('./images/about-bg.webp')] py-[70px] px-[15px] bg-cover bg-center">
+            <div class="xl:max-w-[65%] mx-auto relative">
+                <h2 class="text-base lg:text-xl font-angkor leading-normal">"so whatever you do, do it all for the glory of God."
+                </h2>
+                <span class="block font-arvo italic text-right w-full text-xs md:text-base lg:text-lg leading-tight 2xl:-mt-8">- 1 Corinthians
+                    10:31</span>
+                <h4 class="text-center mt-5 uppercase text-base lg:text-xl">about LAQUON TREADWELL</h4>
+                <p class="text-center 2xl:max-w-[50%] mx-auto text-center text-sm leading-normal mb-8">Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim. </p>
+                <a href="javascript:void(0)"
+                    class="block w-fit	mx-auto px-[48px] py-[10px] text-white border border-transparent bg-primary leading-tight text-xs duration-100 | hover:bg-transparent hover:border-white hover:text-black">FOLLOW
+                    ME</a>
+            </div>
+        </div>
+        <div class="know flex flex-wrap lg:flex-nowrap	">
+            <div class="w-full lg:w-[50%] bg-[url('./images/tournaments-bg.webp')] py-[70px] bg-cover bg-center px-[15px]">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-white uppercase text-xl">TOURNAMENTS FOR CHARITY</h2>
+                    <h3 class="text-white uppercase text-lg">COMING SOON</h3>
+                    <p class="font-roboto lg:text-xs text-white mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+                    <h3 class="text-white uppercase text-lg mt-4">BE IN THE KNOW</h3>
+                    <a href="javascript:void(0)"
+                    class="block mt-4 w-fit	 px-[48px] py-[10px] text-white border leading-tight text-xs duration-100 | hover:bg-primary hover:border-transparent">join the email list</a>
+                </div>
+            </div>
+            <div class="w-full lg:w-[50%] bg-[url('./images/auction-bg.webp')] py-[70px] bg-cover bg-center px-[15px]">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-white uppercase text-xl">VIRTUAL AUCTIONS</h2>
+                    <h3 class="text-white uppercase text-lg">COMING SOON</h3>
+                    <p class="font-roboto lg:text-xs text-white mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+                    <h3 class="text-white uppercase text-lg mt-4">BE IN THE KNOW</h3>
+                    <a href="javascript:void(0)"
+                    class="block mt-4 w-fit	 px-[48px] py-[10px] text-white border leading-tight text-xs duration-100 | hover:bg-primary hover:border-transparent">join the email list</a>
+                </div>
+            </div>
+        </div>
+        <div class="podcast bg-[url('./images/podcast-bg.webp')] py-[250px] bg-cover bg-center px-[15px]">
+            <h2 class="text-white uppercase font-angkor text-lg lg:text-2xl xl:text-2xl 2xl:text-4xl text-center leading-tight mb-4"> PODCAST COMING SOON</h2>
+            <h3  class="text-white uppercase text-center leading-tight text-base lg:text-3xl xl:text-4xl 2xl:text-5xl">STAY TUNED FOR MORE</h3>
+        </div>
+        <div class="contact bg-[url('./images/merch-bg.webp')] bg-cover bg-center lg:bg-right-top py-[100px] px-[15px]">
+            <div class="2xl:w-[50%] mx-auto">
+                <h2 class="text-white text-xl lg:text-4xl text-center mb-0 leading-tight">merch coming soon</h2>
+                <h4 class="text-white text-base lg:text-xl text-center leading-tight mb-[50px]">SIGN UP TO BE THE FIRST TO KNOW WHEN IT DROPS!</h4>
+                <div class="max-w-md mx-auto">
+                    <input type="text" placeholder="Your Name" class="bg-transparent w-full border  border-gray-600	 placeholder:text-white font-robotoNormal font-light px-[20px] py-[15px] mb-[30px]">
+                    <input type="text" placeholder="Your Email" class="bg-transparent w-full border border-gray-600	 placeholder:text-white font-robotoNormal font-light px-[20px] py-[15px] mb-[30px]">
+                    <a href="javascript:void(0)"
+                    class="block w-fit	mx-auto px-[48px] py-[10px] text-white border-2 bg-primary leading-tight text-xs duration-100 | hover:bg-transparent hover:border-white">Send Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="follow-me py-[30px] px-[15px]">
+            <h2 class="text-center text-xl lg:text-3xl leading-tight mb-4">FOLLOW ME ON SOCIAL</h2>
+            <h5 class="text-center text-sm lg:text-lg leading-tight mb-4">LETS GET CONNECTED</h5>
+            <ul class="flex flex-wrap lg:flex-nowrap flex-col lg:flex-row lg:justify-around lg:max-w-[80%] mx-auto">
+                <li>
+                    <a href="javascript:void(0)" class="text-base lg:text-xl text-center block leading-tight">TWITCH</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="text-base lg:text-xl text-center block leading-tight">TIKTOK</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="text-base lg:text-xl text-center block leading-tight">INSTAGRAM</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="text-base lg:text-xl text-center block leading-tight">FACEBOOK</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="text-base lg:text-xl text-center block leading-tight">X</a>
+                </li>
+            </ul>
+        </div>
+        <div class="insta-feed overflow-hidden px-[15] lg:px-[0]">
+            <div class="flex flex-col lg:flex-row">
+                <div class="overlay-feed relative group">
+                    <img src="images/insta-1.webp" class="max-w-full w-full " alt="">
+                    <div class="overlay absolute top-0 left-0 hidden  group-hover:flex w-full h-full bg-[#000000d6]   items-center justify-center">
+                        <div class="w-14 flex items-center  justify-center h-14 bg-primary cursor-pointer">
+                            <img src="images/search-icon.svg" class="max-w-full" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay-feed relative group">
+                    <img src="images/insta-2.webp" class="max-w-full w-full " alt="">
+                    <div class="overlay absolute top-0 left-0 hidden  group-hover:flex w-full h-full bg-[#000000d6]   items-center justify-center">
+                        <div class="w-14 flex items-center  justify-center h-14 bg-primary cursor-pointer">
+                            <img src="images/search-icon.svg" class="max-w-full" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay-feed relative group">
+                    <img src="images/insta-3.webp" class="max-w-full w-full " alt="">
+                    <div class="overlay absolute top-0 left-0 hidden  group-hover:flex w-full h-full bg-[#000000d6]   items-center justify-center">
+                        <div class="w-14 flex items-center  justify-center h-14 bg-primary cursor-pointer">
+                            <img src="images/search-icon.svg" class="max-w-full" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay-feed relative group">
+                    <img src="images/insta-4.webp" class="max-w-full w-full " alt="">
+                    <div class="overlay absolute top-0 left-0 hidden  group-hover:flex w-full h-full bg-[#000000d6]   items-center justify-center">
+                        <div class="w-14 flex items-center  justify-center h-14 bg-primary cursor-pointer">
+                            <img src="images/search-icon.svg" class="max-w-full" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-black py-[30px] px-[15px]">
+            <p class="text-center text-[#b0b0b0] lg:text-xs">© 2024.  HLX x LAQUON TREADWELL.  All Rights Reserved</p>
+        </footer>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
